@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -9,8 +10,8 @@ public class LocatorConcept {
     public static void main(String args[]) throws InterruptedException {
         {
             System.out.println("****************");
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lenovo\\Desktop\\chromedriver.exe");
-            WebDriver driver = new ChromeDriver();
+            System.setProperty("webdriver.ie.driver", "C:\\Users\\Lenovo\\IdeaProjects\\selenium-practice\\lib\\IEDriverServer.exe");
+            WebDriver driver = new InternetExplorerDriver();
             driver.manage().deleteAllCookies();
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);

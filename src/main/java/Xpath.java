@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -11,7 +12,7 @@ public class Xpath {
     public static void main(String args[]) throws InterruptedException {
         {
             System.out.println("****************");
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lenovo\\Desktop\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lenovo\\IdeaProjects\\selenium-practice\\lib\\Ichromedriver.exe");
             WebDriver driver = new ChromeDriver();
             driver.manage().deleteAllCookies();
             driver.manage().window().maximize();
